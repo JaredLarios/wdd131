@@ -27,7 +27,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
-    height: 15vh;
     text-align: center;
     padding-top: 1rem;
 }
