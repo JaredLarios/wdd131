@@ -1,0 +1,70 @@
+:root {
+    --primary: #2ab18f;
+    --secondary: #2596ca;
+    --gray: #b6b6b6;
+    --white: white;
+}
+
+/* General */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+}
+
+/* Body */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    grid-column: 1/4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Menu */
+nav {
+    background-color: var(--secondary);
+    grid-column: 1/4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding: 10px 0;
+}
+
+/* Main */
+main {
+    background-color: var(--gray);
+    grid-column: 1/3;
+    padding: 1rem;
+}
+
+/* Side Bar */
+aside > p {
+    background-color: var(--white);
+    grid-column: 3/4;
+    padding: 1rem 6rem;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    grid-column: 1/4;
+    height: 25vh;
+    text-align: center;
+
+    padding: 1rem;
+}
