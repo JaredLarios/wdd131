@@ -44,7 +44,7 @@ nav {
 }
 
 /* Main */
-.main {
+main {
     background-color: var(--gray);
     grid-column: 1/3;
     padding: 1rem;
