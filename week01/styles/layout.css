@@ -50,7 +50,7 @@ main {
 }
 
 /* Side Bar */
-aside {
+aside > p {
     background-color: var(--white);
     grid-column: 3/4;
     padding: 1rem 6rem;
@@ -61,7 +61,7 @@ aside {
 footer {
     background-color: var(--secondary);
     grid-column: 1/4;
-    height: 30vh;
+    height: 25vh;
     text-align: center;
 
     padding: 1rem;
