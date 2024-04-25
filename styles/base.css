@@ -84,9 +84,8 @@ nav li {
     padding: 10px 0;
 }
 
-nav li:hover {
-    background-color: var(--primary);
-    border-radius: 5px;
+nav a:hover {
+    border-bottom: solid 1px white;
     transition: 1s;
 }
 
