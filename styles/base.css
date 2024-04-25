@@ -54,6 +54,7 @@ header {
 
     text-align: center;
     padding-top: 1rem;
+    border-radius: 0 0 8px 8px;
 }
 
 .name {
@@ -64,6 +65,7 @@ header {
 nav {
     background-color: var(--secondary);
     grid-column: 1/4;
+    border-radius: 8px;
 }
 
 nav ul {
@@ -84,7 +86,7 @@ nav li {
     padding: 10px 0;
 }
 
-nav a:hover {
+nav li a:hover {
     border-bottom: solid 1px white;
     transition: 1s;
 }
@@ -152,6 +154,8 @@ footer {
     text-align: center;
 
     padding: 1rem;
+    border-radius: 8px 8px 0 0;
+
 }
 footer span {
     color: var(--header-color);
