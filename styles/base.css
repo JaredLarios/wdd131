@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nanum+Gothic&family=Signika+Negative:wght@300..700&display=swap');
 
 :root {
-    --primary: #2ab18f;
-    --secondary: #2596ca;
+    --primary: #1a5fb4;
+    --secondary: #241f31;
     --back-ground: white;
-    --name: yellow;
     --white: white;
-
     --header-color: white;
-    --text-color: black;
+    --text-color: #241f31;
 }
 
 /* General */
