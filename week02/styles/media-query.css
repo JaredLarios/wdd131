@@ -15,7 +15,7 @@ header, main, footer {
     background-color: #246ab62d;
 }
 
-main {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
