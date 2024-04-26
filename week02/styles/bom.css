@@ -55,9 +55,16 @@ button {
     padding: 0.5rem;
 }
 li {
+    content: '.';
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    border: solid 1px var(--secondury);
+    border-radius: 8px;
+    margin: 5px 0;
+    padding-left: 10px;
 }
 
 /* DOM Container */
