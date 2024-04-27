@@ -1,10 +1,12 @@
-// Get Web Element
-let dragged;
-let id;
-let index;
-let indexDrop;
+// Drag Variables
+let drag = {
+    index: null,
+    id: null,
+    element: null};
+let indexDrop
 let mylist;
 
+// Get Web Element
 const LIMIT = 10
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
@@ -41,7 +43,7 @@ const postElement = () => {
             list.removeChild(li);
             input.focus();
         })
-
+        
         input.value = '';
         input.focus();
     } else {
@@ -50,35 +52,37 @@ const postElement = () => {
     }
 }
 
+// Get Index to Drag and Drop
+const getIndex = (list, target) => {
+    for(let i = 0; i < list.length; i += 1) {
+        if (list[i] === target) { return i }
+    }
+}
+
 // DOM Event
 button.addEventListener('click', postElement);
-
 document.addEventListener("dragstart", ({target}) => {
-    dragged = target;
-    id = target.id;
+    // Save Elements From Target
+    drag.element = target;
+    drag.id = target.id;
     mylist = target.parentNode.children;
-    for(let i = 0; i < mylist.length; i += 1) {
-        if(mylist[i] === dragged){
-        index = i;
-        }
-    }
+
+    // Get Index From Drag Element
+    drag.index = getIndex(mylist, drag.element)
 });
-
 document.addEventListener("dragover", (event) => event.preventDefault());
-
 document.addEventListener("drop", ({target}) => {
-    if(target.className == "dropzone" && target.id !== id) {
-        dragged.remove( dragged );
-    for(let i = 0; i < mylist.length; i += 1) {
-        if(mylist[i] === target){
-        indexDrop = i;
-        }
-    }
-    console.log(index, indexDrop);
-    if(index > indexDrop) {
-        target.before( dragged );
-    } else {
-        target.after( dragged );
+    // If Droped over a dropzone and ID is not the same of itself
+    if(target.className == "dropzone" && target.id !== drag.id) {
+        // Drag Element Swaped from DropZone Element
+        drag.element.remove( drag.element );
+        indexDrop = getIndex(mylist, target)
+
+        // If Drag Element index is less than Drop Index 
+        if(drag.index > indexDrop) {
+            target.before( drag.element );
+        } else {
+            target.after( drag.element );
         }
     }
 });
