@@ -1,39 +1,119 @@
 :root {
-    --primary: red;
-    --secundary: blue;
-
+    --primary: #1a5fb4;
+    --secundary: #444444ef;
+    
     --headers-color: white;
     --text-color: black;
+    --active: yellow;
+    --nav-text: white;
 
     --layout: solid 2px red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--headers-color);
+    padding: 1rem;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: var(--text-color);
 }
 
 /* Header */
 header {
-    border: var(--layout);
-    padding: 1rem;
+    background-color: var(--primary);
     display: grid;
     grid-template-columns: 1fr;
 }
 nav {
     margin: 0 auto;
     max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secundary);
+    width: 100%;
 }
 nav ul {
     list-style-type: none;
 }
 nav a {
-    display: block;
+    display: none;
+    color: var(--nav-text);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
 }
 nav a:hover {
     text-decoration: underline;
+}
+.active {
+    color: var(--active);
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* Ham Button */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--headers-color);
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+main h2 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+figure {
+    align-items: center;
+    width: clamp(150px, 50%, 220px);
+    height: 250px;
+    margin: auto;
+}
+figcaption {
+    text-align: center;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    color: var(--headers-color);
+    background-color: var(--primary);
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
 }
