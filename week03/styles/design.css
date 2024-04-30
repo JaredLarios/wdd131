@@ -22,9 +22,8 @@ div.banner {
     background-color: #0000ff1f;
 }
 
-marquee {
-	padding: 1rem;
-	background-color: #eee;
+section {
+    padding: 1rem;
 }
 
 h1 {
@@ -34,6 +33,7 @@ h1 {
 main {
 	display: grid;
     grid-template-columns: 1fr 200px;
+    grid-gap: 1.5rem;
 }
 
 h2 {
