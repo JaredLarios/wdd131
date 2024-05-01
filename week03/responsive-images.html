@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="E Jared Larios">
+    <meta name="description" content="WDD 131 Responsive images.">
+    <title>WDD 131 Responsive Images</title>
+
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/lds-temple-large.webp" media="(min-width: 1000px )">
+                <source srcset="images/guatemala-medium.webp" media="(min-width: 500px )">
+                <img src="images/guatemala-small.webp" alt="Guatemala - City" width="500" height="250">
+            </picture>
+        </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/quetzaltenango-large.webp" media="(min-width: 1000px )">
+                <source srcset="images/quetzaltenango-medium.webp" media="(min-width: 500px )">
+                <img src="images/quetzaltenango-small.webp" alt="Guatemala - City" width="500" height="250">
+            </picture>
+        </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tegucigalpa-large.webp" media="(min-width: 1000px )">
+                <source srcset="images/tegucigalpa-medium.webp" media="(min-width: 500px )">
+                <img src="images/tegucigalpa-small.webp" alt="Guatemala - City" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
