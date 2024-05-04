@@ -1,36 +1,39 @@
 :root {
-    --primary: #499DCB;
+    --primary: #1c71d8;
     --secundary: #80BF7E;
     --light: white;
-    --dark: #082458;
+    --dark: #011436;
+
+    --ligth-bg: #ffffffa6;
+    --dark-bg: #80bf7e;
 
     --icon: url('../images/weather.svg');
 
-    --layout: 2px solid;
-    --gree: green;
-    --black: black;
-    --red: red;
-    --blue: blue;
 }
 
 body {
     margin: 0;
+    color: var(--dark);
 }
 
 header {
-    border: var(--layout);
-    border-color: var(--gree);
     padding: 1rem 1.5rem;
+    background-color: var(--primary);
+    border-bottom: 1.5rem solid var(--secundary);
+}
+
+h1 {
+    color: var(--light);
 }
 
 .header {
-    border: var(--layout);
     text-align: center;
     padding: 0.2rem;
 }
 
 .hero {
     height: 80vh;
+    border-bottom: 1rem solid var(--primary);
 }
 
 .hero img {
@@ -40,7 +43,6 @@ header {
 }
 
 section {
-    border: var(--layout);
     border-color: var(--blue);
     margin: 1rem 0.5rem;
     text-align: center;
@@ -68,9 +70,9 @@ ul li {
 }
 
 footer {
-    border: var(--layout);
+    background-color: var(--primary);
+    color: var(--light);
     border-color: var(--gree);
     text-align: center;
-    padding-top: 1rem ;
-    padding-bottom: 3rem;
+    padding: 0.5rem;
 }
