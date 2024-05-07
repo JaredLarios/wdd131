@@ -48,8 +48,10 @@ section {
     text-align: center;
 }
 
-ul {
+.datatable {
     padding: 0;
+    margin: auto;
+    width: 10rem;
 }
 
 .weather h2::after {
@@ -61,12 +63,19 @@ ul {
     margin: auto;
 }
 
-ul li {
-    list-style: none;
+.row {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 5px 0;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.row .key {
+    text-align: right;
+    width: 100%;
+}
+.row .value {
+    text-align: left;
+    width: 100%;
 }
 
 footer {

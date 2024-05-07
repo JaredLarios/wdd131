@@ -19,26 +19,48 @@
     main {
         position:relative;
     }
+
     section {
         position: absolute;
         background-color: var(--ligth-bg);
         color: var(--dark);
         margin: 0;
     }
-    .data {
-        top: 0px;
-        left: 0px;
+
+    .datatable {
+        padding: 0 1rem 1rem 1rem;
     }
+
+    .data {
+        top: 2rem;
+        left: 2rem;
+    }
+    .card-header {
+        text-align: left;
+        position: relative;
+        width: 80%;
+        
+        left: -10px;
+        top: 0;
+    }
+    h2 {
+        padding: 0.5rem 1rem;
+    }
+
     .weather {
-        bottom: 16px;
-        right: 0px;
-    }    
+        bottom: 3rem;
+        right: 2rem;
+    }
+    .weather .card-header {
+        width: 90%;
+    }
     .weather h2::after {
         content: "";
-        display: inline-flex;
+        display: inline-block;
         background-image: var(--icon);
-        height: 50px;
-        width: 50px;
+        background-position: center;
+        height: 40px;
+        width: 40px;
     }
     footer {
         padding-top: 1rem ;
