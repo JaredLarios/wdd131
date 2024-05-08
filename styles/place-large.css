@@ -28,9 +28,12 @@
     }
 
     .datatable {
-        padding: 0 1rem 1rem 1rem;
+        padding: 1rem 0.5rem;
+        width: 90%;
     }
-
+    .row {
+        padding: 0.3rem 0;
+    }
     .data {
         top: 2rem;
         left: 2rem;

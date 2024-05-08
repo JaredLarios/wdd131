@@ -51,7 +51,8 @@ section {
 .datatable {
     padding: 0;
     margin: auto;
-    width: 10rem;
+    width: 80%;
+    font-size: 15px;
 }
 
 .weather h2::after {
@@ -65,8 +66,7 @@ section {
 
 .row {
     display: flex;
-    gap: 2rem;
-    justify-content: space-around;
+    gap: 0.5rem;
 }
 
 .row .key {
