@@ -1,0 +1,56 @@
+:root {
+    --head-bg-color: black;
+    --tab-bg-color: gray;
+    --border: thin solid grey;
+    
+    --text-light: white;
+    --text-dark: black;
+    --caption-color: #302f2f;
+
+	--zebra: #ededed;
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+    margin: 10px auto;
+    border: var(--border);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--caption-color);
+    font-size: .85rem;
+}
+
+tr:nth-child(2) th {
+    background-color: var(--tab-bg-color);
+    color: var(--text-light);
+}
+
+tr:first-child th, tr:nth-child(2) th:first-child {
+    background-color: var(--head-bg-color);
+    color: var(--text-light);
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid var(--caption-color);
+}
+
+th {
+    background-color: var(--caption-color);
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
