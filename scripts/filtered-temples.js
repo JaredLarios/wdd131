@@ -4,6 +4,14 @@ const lastModification = document.querySelector('#lastModification');
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
 
+const grid = document.querySelector('.grid')
+const home = document.querySelector('#home');
+const old = document.querySelector('#old');
+const news = document.querySelector('#new');
+const large = document.querySelector('#large');
+const small = document.querySelector('#small');
+const listFilters = [home, old, news, large, small]
+
 // Get Dates
 const today = new Date()
 const lastModificationDate = new Date(document.lastModified)
@@ -12,12 +20,7 @@ const lastModificationDate = new Date(document.lastModified)
 currentYear.innerHTML = `${today.getFullYear()}`
 lastModification.innerHTML = `Last Modification: ${lastModificationDate}`
 
-// Eevents Listener
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-})
-
+// Temples object
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -101,8 +104,56 @@ const temples = [
     },
 ];
 
+// By defautl call home cards
+craeteTempleCard(temples);
+
+// Reset Class for options
+const resetOpts = () => listFilters.forEach((element) => {
+    if ( element.getAttribute('class') === 'active' ) {
+        element.classList.toggle('active')
+    }
+})
+
+// Eevents Listener
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+home.addEventListener('click', () => {
+    resetOpts();
+    home.classList.toggle('active');
+    let filterTemples = temples;
+    craeteTempleCard(filterTemples);
+});
+old.addEventListener('click', () => {
+    resetOpts();
+    old.classList.toggle('active');
+    let filterTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear()  < 1900);
+    craeteTempleCard(filterTemples);
+});
+news.addEventListener('click', () => {
+    resetOpts();
+    news.classList.toggle('active');
+    let filterTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+    craeteTempleCard(filterTemples);
+});
+small.addEventListener('click', () => {
+    resetOpts();
+    small.classList.toggle('active');
+    let filterTemples = temples.filter(temple => temple.area < 10000);
+    craeteTempleCard(filterTemples);
+});
+large.addEventListener('click', () => {
+    resetOpts();
+    large.classList.toggle('active');
+    let filterTemples = temples.filter(temple => temple.area > 90000);
+    craeteTempleCard(filterTemples);
+});
+
+// Creating Cards
 function craeteTempleCard(filterTemples) {
-    temples.forEach(temple => {
+    grid.innerHTML = ``;
+    filterTemples.forEach(temple => {
         let card = document.createElement('section');
         let name = document.createElement('h3');
         let location = document.createElement('p');
@@ -124,8 +175,6 @@ function craeteTempleCard(filterTemples) {
         card.appendChild(area);
         card.appendChild(img);
 
-        document.querySelector(".grid").appendChild(card);
+        grid.appendChild(card);
     });
 }
-
-craeteTempleCard();
