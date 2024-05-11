@@ -1,0 +1,34 @@
+@media screen and (min-width: 740px) {
+    /* General */
+    body {
+        max-width: 1080px;
+        margin: auto;
+    }
+    /* Header */
+	header {
+		display: flex;
+		align-items: center;
+	justify-content: space-between;
+	}
+	nav {
+        background-color: var(--transparent);
+        padding: 1rem;
+    }
+	nav ul {
+        display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+        display: block;
+		flex: 1 1 100%;
+	}
+    #menu {
+        display: none;
+    }
+    /* Main Content */
+    main .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 2rem;
+    }
+}
