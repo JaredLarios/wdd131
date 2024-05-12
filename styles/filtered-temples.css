@@ -9,6 +9,8 @@
     --active: yellow;
     --nav-text: white;
 
+    --card-backgroud: rgba(128, 128, 128, 0.466);
+
     --layout: solid 2px red;
 }
 
@@ -115,8 +117,8 @@ main h2 {
     padding-left: 5px;
 }
 .grid section {
-    border: 1px solid;
     border-radius: 10px;
+    background-color: var(--card-backgroud);
 }
 .grid img {
     object-fit: cover;
