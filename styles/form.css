@@ -1,0 +1,38 @@
+:root {
+    --primary-color: grey;
+    --secondary-color: black;
+
+    --text-dark: black;
+    --text-light: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+}
+h1 {
+    color: var(--text-light);
+    text-align: center;
+}
+
+/* Form */
+form, main {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    align-items: center;
+}
+form {
+    width: clamp(250px, 50%, 350px);
+
+    border: 1px solid black;
+}
+
+/* Useful features */
