@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Prodcut Review</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="product-name">Prodcut name </label>
+            <select name="product" id="product-name" required>
+                <option value="select" disabled selected>Select a Product ...</option>
+            </select>
+            
+            <label>Overall Rating*</label>
+            <div class="stars">
+                <label for="one-star">&star;</label>
+                <input type="radio" id="one-star" name="stars" required />
+                
+                <label for="two-star">&star;&star;</label>
+                <input type="radio" id="two-star"  name="stars" required />
+                
+                <label for="three-star">&star;&star;&star;</label>
+                <input type="radio" id="three-star" name="stars" required />
+                
+                <label for="four-star">&star;&star;&star;&star;</label>
+                <input type="radio" id="four-star" name="stars" required />
+                
+                <label for="five-star">&star;&star;&star;&star;&star;</label>
+                <input type="radio" id="five-star" name="stars" required />
+            </div>
+            
+            <label for="instalation-date">Date of Installation* </label>
+            <input type="date" id="instalation-date" name="installation" required/>
+            
+            <label>Which feature did you find useful in the product?</label>
+            <div class="useful-features">
+                <div>
+                    <input type="checkbox" id="durability" name="features"/>
+                    <label for="durability">Durability</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="ease" name="features"/>
+                    <label for="ease">Ease of Use</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="performance" name="features">
+                    <label for="performance">Performance</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="design" name="features"/>
+                    <label for="design">Design</label>
+                </div>
+            </div>
+            
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"> </textarea>
+            
+            <label for="name">Your Name (Optional)</label>
+            <input type="text" name="name" id="name">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | E. Jared Larios | Guatemala City</p>
+        <span id="lastModification"></span>
+    </footer>
+</body>
+</html>
