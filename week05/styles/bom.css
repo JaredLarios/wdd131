@@ -1,0 +1,85 @@
+/* General */
+:root {
+    --primary: #ddd;
+    --secondury: #0000001a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Acme, Arial, sans-serif;
+}
+
+/* Header */
+h1 {
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+main {
+    margin: 1rem auto;
+    border: 1px solid var(--secondury);
+    padding: 1rem;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    padding: 0.5rem;
+}
+
+button {
+    margin: 0.5rem;
+}
+
+/* DOM Elements */
+
+.delete {
+    width: fit-content;
+}
+.input {
+    display: flex;
+    gap: 1rem;
+}
+.list {
+    padding: 0.5rem;
+}
+li {
+    content: '.';
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: solid 1px var(--secondury);
+    border-radius: 8px;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+/* DOM Container */
+ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+/* Larger View */
+@media screen and (min-with: 32.5rem) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 320px;
+    }
+}
