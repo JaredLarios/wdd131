@@ -4,6 +4,10 @@
 
     --text-dark: black;
     --text-light: white;
+    --text-optional: navy;
+
+    --white-bg: white;
+    --form-bg: #8080805b;
 }
 
 * {
@@ -11,28 +15,86 @@
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    width: clamp(250px, 100%, 450px);
+    margin: auto;
+}
 
 /* Header */
-header {
+header, footer {
+    align-items: center;
     background-color: var(--secondary-color);
+    padding: 1rem;
 }
-h1 {
+h1, footer {
     color: var(--text-light);
     text-align: center;
 }
 
 /* Form */
-form, main {
+form {
+    margin: 1.5rem 0;
     display: flex;
     flex-direction: column;
-}
-main {
-    align-items: center;
-}
-form {
-    width: clamp(250px, 50%, 350px);
+    background-color: var(--form-bg);
 
+    padding: 0 1rem 1rem 1rem;
     border: 1px solid black;
 }
+label {
+    padding-top: 1.5rem;
+}
+input[type=submit] {
+    margin-top: 1rem;
+}
 
-/* Useful features */
+/* Inputs */
+input[type=text],
+input[type=date],
+textarea,
+select {
+    padding: 0.5em;
+    background-color: var(--white-bg);
+    border: none;
+    border-radius: 5px;
+}
+
+/* Optional Inputs */
+.optional {
+    color: var(--text-optional);
+}
+
+/* Overall rating */
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+.stars label {
+    padding: 0.5rem 0;
+}
+.stars div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}
+.stars div input[type=radio] {
+    width: 100%;
+    height: 20px;
+    border:  1px solid red;
+}
+
+/* Features */
+.useful-features div {
+    padding-top: 0.5rem;
+}
+.useful-features div input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+textarea {
+    resize: none;
+}

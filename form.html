@@ -19,25 +19,35 @@
                 <option value="select" disabled selected>Select a Product ...</option>
             </select>
             
-            <label>Overall Rating*</label>
+            <label>Overall Rating</label>
             <div class="stars">
-                <label for="one-star">&star;</label>
-                <input type="radio" id="one-star" name="stars" required />
+                <div>
+                    <label for="one-star">&star;</label>
+                    <input type="radio" id="one-star" name="stars" required />
+                </div>
                 
-                <label for="two-star">&star;&star;</label>
-                <input type="radio" id="two-star"  name="stars" required />
+                <div>
+                    <label for="two-star">&star;&star;</label>
+                    <input type="radio" id="two-star"  name="stars" required />
+                </div>
                 
-                <label for="three-star">&star;&star;&star;</label>
-                <input type="radio" id="three-star" name="stars" required />
+                <div>
+                    <label for="three-star">&star;&star;&star;</label>
+                    <input type="radio" id="three-star" name="stars" required />
+                </div>
                 
-                <label for="four-star">&star;&star;&star;&star;</label>
-                <input type="radio" id="four-star" name="stars" required />
+                <div>
+                    <label for="four-star">&star;&star;&star;&star;</label>
+                    <input type="radio" id="four-star" name="stars" required />
+                </div>
                 
-                <label for="five-star">&star;&star;&star;&star;&star;</label>
-                <input type="radio" id="five-star" name="stars" required />
+                <div>
+                    <label for="five-star">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" id="five-star" name="stars" required />
+                </div>
             </div>
             
-            <label for="instalation-date">Date of Installation* </label>
+            <label for="instalation-date">Date of Installation</label>
             <input type="date" id="instalation-date" name="installation" required/>
             
             <label>Which feature did you find useful in the product?</label>
@@ -63,10 +73,10 @@
                 </div>
             </div>
             
-            <label for="review">Written Review (Optional)</label>
-            <textarea id="review" name="review"> </textarea>
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="review" name="review" rows="4"> </textarea>
             
-            <label for="name">Your Name (Optional)</label>
+            <label for="name">Your Name <span class="optional">(Optional)</span></label>
             <input type="text" name="name" id="name">
 
             <input type="submit" value="Post Review">
