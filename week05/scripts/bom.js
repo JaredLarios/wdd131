@@ -28,7 +28,7 @@ button.addEventListener('click', () => {
     }
 });
 
-// Display Element in list
+// Display Element list
 function displayList(item) {
     let li = document.createElement('li');
     let deletebutton = document.createElement('button');

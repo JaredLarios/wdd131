@@ -1,5 +1,5 @@
 :root {
-    --primary-color: grey;
+    --primary-color: #1a5fb4;
     --secondary-color: black;
 
     --text-dark: black;
@@ -8,6 +8,8 @@
 
     --white-bg: white;
     --form-bg: #8080805b;
+
+    --color-hover-button: #2bb62b;
 }
 
 * {
@@ -25,7 +27,7 @@ body {
 /* Header */
 header, footer {
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 1rem;
 }
 h1, footer {
@@ -41,10 +43,11 @@ form {
     background-color: var(--form-bg);
 
     padding: 0 1rem 1rem 1rem;
-    border: 1px solid black;
+    border-radius: 5px;
 }
 label {
     padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
 }
 input[type=submit] {
     margin-top: 1rem;
@@ -55,10 +58,19 @@ input[type=text],
 input[type=date],
 textarea,
 select {
-    padding: 0.5em;
+    padding: 0.8em;
     background-color: var(--white-bg);
     border: none;
     border-radius: 5px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+input {
+    accent-color: var(--primary-color);
 }
 
 /* Optional Inputs */
@@ -83,7 +95,6 @@ select {
 .stars div input[type=radio] {
     width: 100%;
     height: 20px;
-    border:  1px solid red;
 }
 
 /* Features */
@@ -97,4 +108,35 @@ select {
 
 textarea {
     resize: none;
+}
+
+/* Submit button */
+input[type=submit] {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+input[type=submit]:hover {
+    background-color: var(--color-hover-button);
+    color: var(--text-light);
+}
+
+/* Review */
+.counter {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    background-color: var(--form-bg);
+    border-radius: 5px;
+    margin: 5rem 1rem;
+}
+.counter h1 {
+    color: black;
+}
+.counter p {
+    text-align: center;
+    width: 100%;
+    font-size: 7rem;
 }
