@@ -1,9 +1,56 @@
+:root {
+    --header-color: navy;
+    --border-color: black;
+
+    --primary-color: #1789FC;
+    --secondary-color: #85D07B;
+    --light-bg: #FFFFFF;
+    --dark-bg: black;
+    --accent: #296EB4;
+}
+
 * {
     margin: 0;
 }
 
+
+/* Header */
+header {
+    color: var(--dark-bg);
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+section {
+    border: solid 1px var(--border-color);
+    padding: 1rem;
+}
+
+/* Color */
+.color{
+    display: flex;
+}
+.background {
+    padding: 1rem;
+}
+.primary {
+    background-color: var(--primary-color);
+}
+.second {
+    background-color: var(--secondary-color);
+}
+.third {
+    background-color: var(--light-bg);
+}
+.accent {
+    color: white;
+    background-color: var(--accent);
+}
+
+/* Font Family */
 .p-font {
     font-family: "Ubuntu Sans", sans-serif;
 }
 .h-font {
-    font-family: "Roboto", sans-serif;}
+    font-family: "Roboto", sans-serif;
+}
