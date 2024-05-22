@@ -13,17 +13,22 @@
     margin: 0;
 }
 
+header, footer {
+    background-color: var(--primary-color);
+}
 
 /* Header */
 header {
     color: var(--dark-bg);
     padding: 1rem;
-    background-color: var(--primary-color);
+    border-radius: 0 0 10px 10px;
 }
 
 section {
-    border: solid 1px var(--border-color);
+    border: solid 0.5px var(--border-color);
     padding: 1rem;
+    border-radius: 10px;
+    margin: 15px;
 }
 
 /* Color */
@@ -53,4 +58,19 @@ section {
 }
 .h-font {
     font-family: "Roboto", sans-serif;
+}
+
+/* Wire Frames */
+.wireframes {
+    display: flex;
+    flex-direction: column;
+}
+.wireframes picture {
+    margin: auto;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
 }
