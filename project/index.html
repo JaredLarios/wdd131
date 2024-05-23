@@ -7,38 +7,45 @@
     <meta name="author" content="E. Jared Larios">
     <title>JED-Dev</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/jeddev.js" defer></script>
 </head>
 <body>
     <header>
+        <h1>@JED-Dev</h1>
         <nav>
-            <h2>@JED-Dev</h2>
-            <ul>
-                <li><a href="">Home</a></li>
+            <button id="menu"></button>
+            <!-- class open -->
+            <ul class="open">
+                <li><a class="active" href=#>Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
-        <div class="banner">
+    </header>
+    <main>
+        <section class="banner">
+            <picture>
+                <source srcset="images/banner-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/banner-medium.webp" media="(min-width: 500px)">
+                <img src="images/banner-small.webp" alt="banner" width="350" height="250">
+            </picture>
             <div>
-                <h1>We make Software just for you!</h1>
+                <h2>We make Software<br>just for you!</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, veniam voluptatem sunt excepturi adipisci dolorem, ullam nihil tenetur mollitia sit veritatis culpa animi corporis</p>
                 <div class="buttons">
                     <button>Send a Message</button>
                     <button>Contact us</button>
                 </div>
             </div>
-            <picture>
-                <source srcset="https://placehold.co/600x400" media="(min-width: 1000px )">
-                <source srcset="https://placehold.co/400" media="(min-width: 500px )">
-                <img src="https://placehold.co/400" alt="" width="500" height="250">
-            </picture>
-        </div>
-    </header>
-    <main>
+        </section>
         <section>
             <div>
                 <span class="icon"></span>

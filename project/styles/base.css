@@ -1,0 +1,117 @@
+:root {
+    --primary: #1789FC;
+    --secondary: #85D07B;
+    --third: #FFFFFF;
+    --forth: #296EB4;
+
+    --transparent: #ffffff00;
+
+    --txt-light: #FFFFFF;
+    --txt-dark: black;
+    --txt-highlight: #85D07B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    display: grid;
+}
+h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--txt-light);
+}
+nav {
+    background-color: var(--forth);
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: none;
+    color: var(--txt-light);
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.active {
+    color: var(--txt-highlight)
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* Ham Button */
+nav button {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: var(--transparent);
+    color: var(--txt-light);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+nav button::before {
+    content: "☰";
+}
+nav button.open::before {
+    content: "❎";
+}
+
+/* Main content */
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.banner div {
+    width: 80%;
+    margin: auto;
+}
+.banner h2 {
+    font-size: 2rem;
+}
+.banner p {
+    padding: 1rem 0;
+    text-align: justify;
+}
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.buttons button {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    width: 50%;
+    font-weight: 500;
+}
+.buttons :first-child {
+    background-color: var(--secondary);
+    border: none;
+}
+.buttons :last-child {
+    border: 1px solid var(--txt-dark);
+}
