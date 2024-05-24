@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/jeddev.js" defer></script>
@@ -22,7 +24,7 @@
         <nav>
             <button id="menu"></button>
             <!-- class open -->
-            <ul class="open">
+            <ul>
                 <li><a class="active" href=#>Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">About</a></li>
@@ -39,36 +41,42 @@
             </picture>
             <div>
                 <h2>We make Software<br>just for you!</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, veniam voluptatem sunt excepturi adipisci dolorem, ullam nihil tenetur mollitia sit veritatis culpa animi corporis</p>
+                <p>We build software solutions 100% based in your business needs. This makes you part of our family!</p>
                 <div class="buttons">
                     <button>Send a Message</button>
                     <button>Contact us</button>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="icon-slider">
             <div>
-                <span class="icon"></span>
+                <span class="material-symbols-outlined">check</span>
                 <h3>Build your Feature</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam, alias asperiores provid</p>
             </div>
             <div>
-                <span class="icon"></span>
-                <h3>Build your Feature</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam, alias asperiores provid</p>
+                <span class="material-symbols-outlined">flag</span>
+                <h3>Get Support</h3>
             </div>
             <div>
-                <span class="icon"></span>
-                <h3>Build your Feature</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam, alias asperiores provid</p>
+                <span class="material-symbols-outlined">star</span>
+                <h3>Enjoy Software</h3>
             </div>
         </section>
         <section>
+            <picture>
+                <source srcset="images/banner-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/banner-medium.webp" media="(min-width: 500px)">
+                <img src="images/banner-small.webp" alt="banner" width="350" height="250">
+            </picture>
             <h2>Why do I need specific software?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem voluptatem deserunt providen</p>
             <button>About us</button>
         </section>
         <section>
+            <picture>
+                <source srcset="images/banner-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/banner-medium.webp" media="(min-width: 500px)">
+                <img src="images/banner-small.webp" alt="banner" width="350" height="250">
+            </picture>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quidem voluptatem deserunt providen</p>
             <button>Whatch Services</button>
         </section>

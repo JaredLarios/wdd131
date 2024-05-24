@@ -20,6 +20,14 @@
 h1, h2, h3, h4 {
     font-family: "Ubuntu Sans", sans-serif;
 }
+section {
+    padding-bottom: 2rem;
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /* Header */
 header {
@@ -80,12 +88,7 @@ nav button.open::before {
     flex-direction: column;
     text-align: center;
 }
-.banner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.banner div {
+.banner > div {
     width: 80%;
     margin: auto;
 }
@@ -96,17 +99,17 @@ nav button.open::before {
     padding: 1rem 0;
     text-align: justify;
 }
+
 /* Buttons */
 .buttons {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }
 .buttons button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
-    width: 50%;
     font-weight: 500;
+    width: 48%;
 }
 .buttons :first-child {
     background-color: var(--secondary);
@@ -114,4 +117,13 @@ nav button.open::before {
 }
 .buttons :last-child {
     border: 1px solid var(--txt-dark);
+}
+
+/* Icons Slider */
+.icon-slider {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 1rem 2rem 1rem;
 }
