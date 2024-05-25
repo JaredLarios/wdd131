@@ -21,12 +21,25 @@ h1, h2, h3, h4 {
     font-family: "Ubuntu Sans", sans-serif;
 }
 section {
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
 }
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+main button {
+    background-color: var(--secondary);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 48%;
+}
+.banner, footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Header */
@@ -36,7 +49,7 @@ header {
 }
 h1 {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--txt-light);
 }
 nav {
@@ -70,8 +83,8 @@ nav button {
     background-color: var(--transparent);
     color: var(--txt-light);
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 1.2rem;
 }
 nav button::before {
     content: "☰";
@@ -80,14 +93,9 @@ nav button.open::before {
     content: "❎";
 }
 
-/* Main content */
 
+/* Main content */
 /* Banner */
-.banner {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 .banner > div {
     width: 80%;
     margin: auto;
@@ -105,17 +113,8 @@ nav button.open::before {
     display: flex;
     justify-content: space-between;
 }
-.buttons button {
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-weight: 500;
-    width: 48%;
-}
-.buttons :first-child {
-    background-color: var(--secondary);
-    border: none;
-}
 .buttons :last-child {
+    background-color: var(--transparent);
     border: 1px solid var(--txt-dark);
 }
 
@@ -123,7 +122,46 @@ nav button.open::before {
 .icon-slider {
     display: flex;
     font-size: 0.8rem;
+    gap: 15px;
     justify-content: space-between;
     text-align: center;
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 1rem 2.5rem 1rem;
+
+    max-width: 550px;
+    margin: auto;
+}
+
+/* cards */
+.card div,
+.card > p,
+.card > h2 {
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+}
+.card button {
+    width: 100%;
+}
+.card p, .card h2 {
+    margin-bottom: 0.8rem;
+}
+.card p {
+    text-align: justify;
+}
+.card > p, .card > h2 {
+    text-align: center;
+}
+.card > div > button {
+    width: 100%;
+}
+.last {
+    padding: 1.5rem 0 3rem 0;
+}
+
+
+/* Footer */
+footer {
+    border-top: 0.5px solid grey;
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    margin-top: 1.5rem;
 }
