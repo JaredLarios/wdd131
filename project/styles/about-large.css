@@ -1,0 +1,23 @@
+@media screen and (min-width: 740px) {
+    /* Banner */
+    .banner {
+        display: block;
+        margin: 0;
+        border-radius: 0px;
+    }
+    .banner img {
+        border-radius: 0px;
+    }
+    .banner h1 {
+        text-align: center;
+    }
+
+    /* About */
+    section:last-child p {
+        width: 60%;
+        margin: auto;
+    }
+    section:last-child button {
+        width: 60%;
+    }
+}

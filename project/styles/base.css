@@ -6,6 +6,7 @@
     --banner: #808080b4;
 
     --transparent: #ffffff00;
+    --light-transparent: #ffffff9a;
 
     --txt-light: #FFFFFF;
     --txt-dark: black;
@@ -78,7 +79,7 @@ nav a:hover {
 }
 
 /* Ham Button */
-nav button {
+#menu {
     font-size: 1.5rem;
     border: 0;
     background-color: var(--transparent);
@@ -87,10 +88,10 @@ nav button {
     top: 0.5rem;
     right: 1.2rem;
 }
-nav button::before {
+#menu::before {
     content: "☰";
 }
-nav button.open::before {
+#menu.open::before {
     content: "❎";
 }
 

@@ -1,0 +1,46 @@
+/* Main content */
+/* Banner */
+.banner {
+    position: relative;
+    max-height: 220px;
+}
+.banner img {
+    max-height: 220px;
+}
+.banner > div {
+    width: 100%;
+    background-color: var(--light-transparent);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.banner h1 {
+    font-size: 2rem;
+    color: var(--txt-dark);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+/* About */
+section:last-child {
+    padding: 1.5rem 1rem;
+}
+section:last-child h2 {
+    text-align: center;
+}
+section:last-child p {
+    text-align: justify;
+    padding: 2.5rem 0;
+}
+section:last-child div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section:last-child button {
+    width: 85%;
+}
