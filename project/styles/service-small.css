@@ -1,0 +1,28 @@
+/* Main content */
+/* Banner */
+.banner {
+    position: relative;
+    max-height: 220px;
+}
+.banner img {
+    max-height: 220px;
+}
+.banner > div {
+    width: 100%;
+    background-color: var(--light-transparent);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.banner h1 {
+    font-size: 2rem;
+    color: var(--txt-dark);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+/* About */
