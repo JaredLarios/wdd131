@@ -26,3 +26,31 @@
 }
 
 /* About */
+.grid {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.grid img {
+    border-radius: 15px;
+}
+.grid div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    border: var(--card-border);
+    border-radius: 10px;
+    height: clamp(250px, 100%, 500px);
+}
+
+.grid div h3,
+.grid div p {
+    padding: 1rem;
+}
+
+.grid div p {
+    text-align: justify;
+}
