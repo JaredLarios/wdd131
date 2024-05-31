@@ -8,10 +8,12 @@
     --transparent: #ffffff00;
     --light-transparent: #ffffff9a;
     --card-border: 1px solid black;
+    --input-border: 1px solid #0000003d;
+    --form-bg: #80808018;
 
     --txt-light: #FFFFFF;
     --txt-dark: black;
-    --txt-highlight: #85D07B;
+    --txt-highlight: #60f74c;
 }
 
 * {

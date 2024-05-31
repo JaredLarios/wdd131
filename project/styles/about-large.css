@@ -1,7 +1,7 @@
 @media screen and (min-width: 740px) {
     /* Banner */
     .banner {
-        display: block;
+        display: flex;
         margin: 0;
         border-radius: 0px;
     }
