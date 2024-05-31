@@ -1,0 +1,54 @@
+/* Main content */
+/* Banner */
+.banner {
+    position: relative;
+    max-height: 220px;
+}
+.banner img {
+    max-height: 220px;
+}
+.banner > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-transparent);
+}
+.banner h1 {
+    display: grid;
+    font-size: 2rem;
+    color: var(--txt-dark);
+    place-items: center;
+    height: 100%;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 3rem 0;
+    background-color: var(--form-bg);
+}
+form > h2 {
+    text-align: center;
+}
+/* Fields */
+label {
+    padding: 1rem 0 0.5rem 0;
+}
+textarea,
+input[type=text],
+input[type=email] {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: var(--input-border);
+    resize: none;
+}
+input[type=submit] {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
