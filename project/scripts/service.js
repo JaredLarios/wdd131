@@ -2,7 +2,7 @@ const grid = document.querySelector('.grid');
 
 const listServices = [
     {
-        title: "Software Developement",
+        title: "Software Development",
         content: "",
         img: "./images/team-small.webp",
     },

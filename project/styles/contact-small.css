@@ -34,6 +34,7 @@ form {
     padding:  35px 0 0 0;
     text-align: center;
 }
+
 /* Fields */
 label {
     padding: 1rem 0 0.5rem 0;
@@ -68,4 +69,20 @@ input[type=submit] {
 
 .form img {
     display: none;
+}
+
+/* Confirmation */
+.confirmation {
+    height: 70vh;
+    display: grid;
+    place-items: center ;
+}
+.confirmation h2,
+.confirmation p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.confirmation h2 {
+    font-size: 2.5rem;
 }

@@ -101,6 +101,13 @@ nav a:hover {
     content: "❎";
 }
 
+/* POPup */
+.popup {
+    padding: 0.5rem;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    text-align: center;
+}
 
 /* Main content */
 /* Banner */
@@ -165,7 +172,6 @@ nav a:hover {
 .last {
     padding: 1.5rem 0 3rem 0;
 }
-
 
 /* Footer */
 footer {

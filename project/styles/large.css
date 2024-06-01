@@ -89,6 +89,16 @@
         margin: 2.5rem auto;
     }
 
+    /* POPup */
+    .popup {
+        position: fixed;
+        text-align: left;
+        border-radius: 0 10px 10px 0;
+        bottom: 15%;
+        border: 1px solid var(--light-transparent);
+
+        width: 18%;
+    }
 
     /* Footer */
     footer {
