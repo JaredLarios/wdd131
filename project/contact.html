@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/contact-small.css">
-    <link rel="stylesheet" href="styles/about-large.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
     <script src="scripts/jeddev.js" defer></script>
 </head>
 <body>
@@ -45,17 +45,22 @@
                 <h1>Contact Us</h1>
             </div>
         </section>
-        <section>
+        <section class="form">
+            <h2>Send us a message!</h2>
             <form action="confirm.html" method="get">
-                <h2>Send us a message!</h2>
-                <label for="email">Email* </label>
+                <label for="email">Email </label>
                 <input type="email" name="email" id="email" required>
-                <label for="subject">Subject</label>
+                <label for="subject">Subject <span>(Optional)</span> </label>
                     <input type="text" name="subject" id="subject">
-                <label for="message">Message*</label>
+                <label for="message">Message</label>
                 <textarea rows="5" name="message" id="message" required></textarea>
                 <input type="submit" value="Send My Message">
             </form>
+            <picture>
+                <source srcset="images/banner-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/banner-medium.webp" media="(min-width: 500px)">
+                <img src="images/banner-small.webp" alt="banner" width="350" height="250">
+            </picture>
         </section>
     </main>
     <footer>

@@ -30,12 +30,17 @@ form {
     margin: 3rem 0;
     background-color: var(--form-bg);
 }
-form > h2 {
+.form > h2 {
+    padding:  35px 0 0 0;
     text-align: center;
 }
 /* Fields */
 label {
     padding: 1rem 0 0.5rem 0;
+}
+label > span {
+    color: #3333c0;
+    font-size: 13px;
 }
 textarea,
 input[type=text],
@@ -51,4 +56,8 @@ input[type=submit] {
     border: none;
     background-color: var(--secondary);
     border-radius: 10px;
+}
+
+.form img {
+    display: none;
 }
