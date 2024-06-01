@@ -50,6 +50,14 @@ input[type=email] {
     border: var(--input-border);
     resize: none;
 }
+textarea:invalid,
+input:invalid {
+    border-left: 6px solid var(--error);
+}
+textarea:valid,
+input:valid {
+    border-left: 6px solid var(--valid);
+}
 input[type=submit] {
     margin: 1rem 0;
     padding: 0.5rem;
