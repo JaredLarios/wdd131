@@ -4,32 +4,32 @@ const listServices = [
     {
         title: "Software Development",
         content: "",
-        img: "./images/team-small.webp",
+        img: "./images/software-dev-small.webp",
     },
     {
         title: "Web Development",
         content: "",
-        img: "./images/team-small.webp",
+        img: "./images/web-small.webp",
     },
     {
         title: "UIX Design",
         content: "",
-        img: "./images/team-small.webp",
+        img: "./images/uix-small.webp",
     },
     {
         title: "Front-End",
         content: "",
-        img: "./images/team-small.webp",
+        img: "./images/frontend-small.webp",
     },
     {
         title: "Back-End",
         content: "",
-        img: "./images/team-small.webp",
+        img: "./images/backend-small.webp",
     },
     {
-        title: "API",
+        title: "DataBase",
         content: "",
-        img: "./images/team-small.webp",
+        img: "./images/database-small.webp",
     }
 ];
 
