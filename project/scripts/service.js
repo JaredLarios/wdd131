@@ -7,7 +7,7 @@ const listServices = [
         img: "./images/team-small.webp",
     },
     {
-        title: "Web Developement",
+        title: "Web Development",
         content: "",
         img: "./images/team-small.webp",
     },
