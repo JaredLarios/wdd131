@@ -82,7 +82,9 @@ input[type=submit] {
     text-align: center;
     padding: 1rem;
 }
-
 .confirmation h2 {
     font-size: 2.5rem;
+}
+.confirmation button {
+    width: 100%;
 }
