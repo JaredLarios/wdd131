@@ -13,7 +13,7 @@
     height: 100%;
     background-color: var(--light-transparent);
 }
-.banner h1 {
+.banner h2 {
     display: grid;
     font-size: 2rem;
     color: var(--txt-dark);
