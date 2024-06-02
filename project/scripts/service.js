@@ -3,32 +3,32 @@ const grid = document.querySelector('.grid');
 const listServices = [
     {
         title: "Software Development",
-        content: "",
+        content: "We make apps and software solutions for you.",
         img: "./images/software-dev-small.webp",
     },
     {
         title: "Web Development",
-        content: "",
+        content: "You can have your own page or your online services.",
         img: "./images/web-small.webp",
     },
     {
         title: "UIX Design",
-        content: "",
+        content: "We build and design your UI interfaces.",
         img: "./images/uix-small.webp",
     },
     {
         title: "Front-End",
-        content: "",
+        content: "We have expertise in front-end development.",
         img: "./images/frontend-small.webp",
     },
     {
         title: "Back-End",
-        content: "",
+        content: "We can deploy and handle your backend service.",
         img: "./images/backend-small.webp",
     },
     {
         title: "DataBase",
-        content: "",
+        content: "We build, handle and manage your DB's.",
         img: "./images/database-small.webp",
     }
 ];
